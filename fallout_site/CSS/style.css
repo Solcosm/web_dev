@@ -1,0 +1,498 @@
+/*Custom Fonts*/
+@font-face {
+    font-family: SouthernAire;
+    src: url('../Fonts/southernaire-webfont.woff2') format('woff2'),
+    url('../Fonts/southernaire-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: Overseer;
+    src: url('../Fonts/overseer-webfont.woff2') format('woff2'),
+    url('../Fonts/overseer-webfont.woff') format('woff');
+}
+/*Animation*/
+@keyframes vatsanim {
+    0% {
+        color: #2E2525;
+    }
+    50% {
+        color: lightgreen;
+    }
+    100% {
+        color: #2E2525;
+    }
+}
+/*Mobile Switcher*/
+@media (max-width: 1000px) {
+    html header {
+        width: 100%;
+        height: auto;
+        border-left: none;
+        border-right: none;
+        border-bottom: none;
+        border-radius: 0px;
+        display: flex;
+    }
+    html #leftcontainer, html #rightcontainer {
+        display: none;
+    }
+    html #midcontainer {
+        width: 100%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+    html #midcontainer img {
+        width: 99%;
+        height: auto;
+        padding: 0 0 0 0;
+    }
+    html aside {
+        position: static;
+        width: 100%;
+    }
+    html nav {
+        width: 100%;
+        padding: 30px 0 0 0;
+        position: static;
+        float: none;
+    }
+    html nav ul {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+        background-color: rgb(78, 78, 78);
+    }
+    html nav li a {
+        padding: 10px 0 10px 0;
+        width: 100%;
+        font-size: 12px;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+    }
+    html nav .subpage, html nav .devportal {
+        display: none;
+    }
+    html body {
+        width: 100%;
+        font-size: 14px;
+    }
+    html main {
+        width: 100%;
+    }
+    html article {
+        padding: 0;
+    }
+    html h1 {
+        width: 100%;
+        font-size: 100px;
+        margin: 50px 0px 0px 0px;
+    }
+    html h2 {
+        text-align: center;
+        font-family: 'SouthernAire';
+        font-weight: normal;
+        font-size: 50px;
+    }
+    html #summary,
+    html #fallout,
+    html #fallout2,
+    html #fallout3,
+    html #falloutnv,
+    html #fallout4 {
+        text-align: center;
+        padding: 0;
+        font-size: 50px;
+        width: 100%;
+        background-image: none;
+    }
+    html #footercontainer {
+        width: 100%;
+        margin: 0 auto;
+        filter: invert(100%);
+    }
+    html #borderL {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 15%;
+        margin: 20px 0 0 50px;
+        float: left;
+    }
+    html #borderR {
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 15%;
+        margin: 20px 50px 0 0;
+        float: right;
+    }
+    html #footer img {
+        width: 100px;
+        height: auto;
+        display: block;
+        margin: 0 auto;
+    }
+    html #copyright {
+        text-align: center;
+        margin: 20px 0 0 0;
+        font-family: 'Segoe UI';
+        font-weight: bold;
+    }
+    html #vtsci img {
+        width: 100%;
+        height: auto;
+    }
+    html #VATSList ul {
+        padding: 0% 5% 5% 10%;
+    }
+    html #vteng img {
+        width: 100%;
+        height: auto;
+    }
+    html #vaultboy img {
+        width: 60%;
+        height: auto;
+    }
+    html #formcomment {
+        width: 100%;
+        margin: 0 auto;
+    }
+    html #vtbillboard img {
+        width: 100%;
+    }
+    html form {
+        width: 100%;
+    }
+    html #form_container_top {
+        width: 100%;
+    }
+    html #form_reminder {
+        width: 100%;
+        color: rgb(105, 105, 105);
+        text-align: center;
+    }
+    html #form_beginning {
+        padding: 10px 10px 10px 0;
+        width: 250px;
+        float: left;
+    }
+    html #form_right {
+        padding: 0;
+        float: left;
+    }
+    html #form_SPECIAL_container, html #form_SPECIAL_container_mobile .form_SPECIAL_mobile, html #form_SPECIAL_container .form_SPECIAL, html #form_SPECIAL_vaultboy img, html #form_numbers {
+        display: none;
+    }
+    html #points,
+    html #points_left {
+        display: none;
+    }
+    html #form_mid {
+        width: 100%;
+        padding: 25px 0 0 0;
+    }
+    html #form_bottom textarea {
+        width: 100%;
+        padding: 25px 0 0 0;
+    }
+    html input[type=submit], input[type=reset] {
+        width: 99%;
+    }
+}
+@media (max-width: 552px) {
+    html #form_right {
+        padding: 0;
+        float: left;
+    }
+}
+#vatsanim {
+    animation-name: vatsanim;
+    animation-duration: 5s;
+    animation-iteration-count: 999;
+}
+/*Header*/
+header {
+    width: 1000px;
+    height: 100px;
+    margin: auto;
+    background-color: #2E2525;
+    border-left: 3px solid white;
+    border-right: 3px solid white;
+    border-bottom: 3px solid white;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+#leftcontainer {
+    padding: 10px 0 0 100px;
+    display: block;
+    margin: auto;
+    float: left;
+    width: auto;
+    height: auto;
+}
+#midcontainer {
+    padding: 10px 0 0 50px;
+    display: block;
+    margin: auto;
+    float: left;
+    width: auto;
+    height: auto;
+}
+#rightcontainer {
+    padding: 10px 50px 0 0;
+    display: block;
+    margin: auto;
+    float: right;
+    width: auto;
+    height: auto;
+}
+#leftcontainer img {
+    width: auto;
+    height: 75px;
+}
+#midcontainer img {
+    width: auto;
+    height: 75px;
+}
+#rightcontainer img {
+    width: auto;
+    height: 75px;
+}
+/*Navigation*/
+nav {
+    position: relative;
+    float: left;
+    padding: 35px 0 0 25px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    width: 200px;
+    background-color: #2E2525;
+}
+nav li a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+nav li a.active {
+    background-color: rgb(127, 179, 255);
+    color: white;
+}
+nav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+nav .subpage {
+    margin: 0 0 0 20px;
+}
+nav .devsubpage {
+    margin: 0 0 0 20px;
+}
+/*Body*/
+body {
+    width: 1500px;
+    margin: auto;
+    background-color: #2E2525;
+    font-family: 'Segoe UI';
+    font-size: 16px;
+    color: white;
+}
+main {
+    width: 1000px;
+    margin: auto;
+}
+h1 {
+    text-align: center;
+    font-family: 'Overseer';
+    font-weight: normal;
+    font-size: 100px;
+    margin: 100px 100px 0px 100px;
+}
+h2 {
+    text-align: center;
+    font-family: 'SouthernAire';
+    font-weight: normal;
+    font-size: 50px;
+}
+h3 {
+    text-align: center;
+    font-family: 'Overseer';
+    font-weight: normal;
+    font-size: 75px;
+}
+#summary,
+#fallout,
+#fallout2,
+#fallout3,
+#falloutnv,
+#fallout4 {
+    text-align: left;
+    padding: 0 0 0 50px;
+    font-size: 50px;
+}
+#summary {
+    background-image: url("../Images/summary.png");
+    font-family: SouthernAire;
+}
+#fallout {
+    background-image: url("../Images/fallout1.png");
+}
+#fallout2 {
+    background-image: url("../Images/fallout2.png");
+}
+#fallout3 {
+    background-image: url("../Images/fallout3.png");
+}
+#falloutnv {
+    background-image: url("../Images/falloutnv.png");
+}
+#fallout4 {
+    background-image: url("../Images/fallout4.png");
+}
+/*V.A.T.S.*/
+#vtsci img {
+    width: 1000px;
+    height: auto;
+}
+/*Pip-Boy*/
+#vteng img {
+    width: 1000px;
+    height: auto;
+}
+#vaultboy img {
+    width: 500px;
+    height: auto;
+    margin: 0 0 0 25%;
+}
+/*Vault-Tec Admissions Form*/
+#formcomment {
+    width: 750px;
+    margin: 0 auto;
+}
+#vtbillboard img {
+    width: 750px;
+    margin: 0 auto;
+    display: block;
+}
+form {
+    width: 800px;
+    margin: 0 auto;
+}
+#form_container_top {
+    display: inline-block;
+}
+#form_reminder {
+    color: rgb(105, 105, 105);
+    text-align: center;
+}
+#form_beginning {
+    padding: 20px;
+    width: 250px;
+    float: left;
+}
+#form_right {
+    padding: 0 0 0 200px;
+    float: left;
+}
+#form_SPECIAL_container {
+    width: 100%;
+    display: inline-block;
+}
+#form_SPECIAL_container .form_SPECIAL {
+    width: 300px;
+    padding: 7px 7px 7px 90px;
+    float: left;
+}
+#form_SPECIAL_vaultboy img {
+    width: 250px;
+    height: auto;
+    float: left;
+    position: absolute;
+}
+#form_numbers {
+    float: left;
+    position: absolute;
+    padding: 0px 0px 0px 200px;
+}
+#points {
+    padding: 0px 0px 0px 185px;
+    font-size: 40px;
+}
+#points_left {
+    padding: 0px 0px 0px 140px;
+}
+#form_mid {
+    padding: 20px;
+}
+#form_bottom textarea {
+    resize: none;
+    width: 700px;
+    padding: 20px;
+    border: none;
+    background-color: #2E2525;
+    color: white;
+}
+input[type=text], [type=email], [type=date], [type=tel] {
+    width: 250px;
+    padding: 5px;
+    border: none;
+    background-color: #2E2525;
+    color: white;
+}
+input[type=number] {
+    width: 40px;
+    padding: 10px 10px 10px 100px;
+    border: none;
+    vertical-align: middle;
+    background-color: #2E2525;
+    color: white;
+    -webkit-appearance: none;
+}
+input[type=submit],
+[type=reset] {
+    width: 49%;
+    padding: 10px 0px;
+    margin: 10px 0px 0px 5px;
+    border: 1px solid white;
+    background-color: #2E2525;
+    color: white;
+}
+.buttonCenter input:hover {
+    background-color: white;
+    color: black;
+}
+/*Footer*/
+#break {
+    height: 100px;
+}
+#footercontainer {
+    width: 700px;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+#borderL {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+#borderR {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+footer img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#copyright {
+    text-align: center;
+    margin: 20px 0 50px 0;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: black;
+}

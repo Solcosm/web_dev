@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    <meta charset="utf-8" />
+    <meta name="description" content="This site is dedicated to detailing the history and gameplay of the Fallout series." />
+    <meta name="keywords" content="HTML,CSS,Fallout,Bethesda,Video Games," />
+    <meta name="author" content="Michael Kettering" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- W3 recommends every web page supports device scaling!-->
+    <title>The Wasteland Survival Guide
+    </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+    <script src="../JavaScript/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div id="leftcontainer">
+            <img src="../Images/vtbook.png" alt="Survival Guide Icon" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
+        </div>
+        <div id="midcontainer">
+            <img src="../Images/title.png" alt="The Wasteland Survival Guide!">
+        </div>
+        <div id="rightcontainer">
+            <a href="https://en.wikipedia.org/wiki/Fallout_(series)">
+                <img src="../Images/fallout_logo.png" alt="Fallout Logo">
+            </a>
+        </div>
+    </header>
+    <aside>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#summary">Summary</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout">Fallout</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout2">Fallout 2</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout3">Fallout 3</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#falloutnv">Fallout: New Vegas</a>
+                </li>
+                <li class="subpage">
+                    <a href="index.html#fallout4">Fallout 4</a>
+                </li>
+                <li>
+                    <a href="vats.html">V.A.T.S.</a>
+                </li>
+                <li>
+                    <a href="pipboy.html">Pip-Boy</a>
+                </li>
+                <li>
+                    <a href="form.html">Secure Concealed Admissions Manual (S.C.A.M.)</a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <h1>Vault Admission</h1>
+        <h2>“Living underground with style!”</h2>
+        <div id="vtbillboard">
+            <img src="../Images/vtbillboard.png" alt="Vault-Tec Billboard Advertisement">
+        </div>
+        <div id="formcomment">
+            <p>
+                So, you've decided to sign up using our government-funded Secure Concealed Admissions Manual (S.C.A.M.)! Before we can admit
+                you into your local Vault (Vault 42), you need to fill out a couple of simple questions so we can
+                <del>track your information in the event you don't pay</del> keep track of our beloved Vault Dwellers in the case
+                of a catastrophic emergency!
+                <br>
+                <br>
+                <em>Trust us, this will save you many a headache down the road...</em>
+            </p>
+        </div>
+        <form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+            <fieldset>
+                <legend>REGISTRATION FORM</legend>
+                <div id="form_container_top">
+                    <div id="form_reminder">
+                        <em>All fields required</em>
+                    </div>
+                    <div id="form_beginning">
+                        <input name="name" type="text" maxlength="30" placeholder="Name" autofocus required>
+                        <input name="address" type="text" maxlength="50" placeholder="Address" required>
+                        <input name="email" type="email" maxlength="30" placeholder="Email" required>
+                    </div>
+                    <div id="form_right">
+                        Date that you filled out this form
+                        <br>
+                        <input name="date" type="date" required>
+                        <br>Telephone number
+                        <br>
+                        <input name="phone_number" type="tel" maxlength="17" placeholder="+# (###) ###-####" pattern="[+]\d{1}[ ][(][0-9][0-9][0-9][)][ ][0-9][0-9][0-9][-][0-9][0-9][0-9][0-9]"
+                            required>
+                    </div>
+                </div>
+                <div id="form_SPECIAL_container">
+                    <div class="form_SPECIAL">
+                        Strength
+                    </div>
+                    <div class="form_SPECIAL">
+                        Perception
+                    </div>
+                    <div class="form_SPECIAL">
+                        Endurance
+                    </div>
+                    <div class="form_SPECIAL">
+                        Charisma
+                    </div>
+                    <div class="form_SPECIAL">
+                        Intelligence
+                    </div>
+                    <div class="form_SPECIAL">
+                        Agility
+                    </div>
+                    <div class="form_SPECIAL">
+                        Luck
+                    </div>
+                    <div id="form_SPECIAL_vaultboy">
+                        <img src="../Images/VaultBoy_chair.png" alt="Lazy Sunday Vault Boy">
+                    </div>
+                    <div id="form_numbers">
+                        <input name="Strength" type="number" min="1" max="10" value=1 onchange="points()" id="S">
+                        <br>
+                        <input name="Perception" type="number" min="1" max="10" value=1 onchange="points()" id="P">
+                        <br>
+                        <input name="Endurance" type="number" min="1" max="10" value=1 onchange="points()" id="E">
+                        <br>
+                        <input name="Charisma" type="number" min="1" max="10" value=1 onchange="points()" id="C">
+                        <br>
+                        <input name="Intelligence" type="number" min="1" max="10" value=1 onchange="points()" id="I">
+                        <br>
+                        <input name="Agility" type="number" min="1" max="10" value=1 onchange="points()" id="A">
+                        <br>
+                        <input name="Luck" type="number" min="1" max="10" value=1 onchange="points()" id="L">
+                    </div>
+                </div>
+                <div id="points">21</div>
+                <div id="points_left">
+                    POINTS AVAILABLE
+                </div>
+                <div id="form_mid">
+                    In order to obtain a valid Vault-Tec Secure Identification Card, we require a clear headshot photograph which you can upload
+                    using the button below
+                    <br>
+                    <br>
+                    <input type="file" name="photo_ID" required>
+                    <br>
+                    <br>Which age range is closest to you (in years)?
+                    <br>
+                    <br>
+                    <input type="radio" name="platform" value="young" required> 1-19
+                    <br>
+                    <input type="radio" name="platform" value="medium"> 20-49
+                    <br>
+                    <input type="radio" name="platform" value="old"> 50+
+                    <br>
+                    <br>Why are you reserving a spot in one of Vault-Tec's Official Vaults?
+                    <br>
+                    <br>
+                    <input type="radio" name="feedback_type" value="positive" required> I want to secure my future in the event of nuclear annihilation
+                    <br>
+                    <input type="radio" name="feedback_type" value="neutral"> I'm looking for a life radically different than the one I currently have
+                    <br>
+                    <input type="radio" name="feedback_type" value="sarcasm"> I don't have anything better to do than filling out random forms I found at work
+                    <br>
+                    <input type="radio" name="feedback_type" value="negative"> You don't need to know
+                    <br>
+                    <br> Please rate your experience filling out the official Vault-Tec Secure Concealed Admissions Manual (scores
+                    are weighed out of 10)
+                    <br>
+                    <br>
+                    <select name="ratings">
+                        <option value="lowest">0</option>
+                        <option value="low">1</option>
+                        <option value="low">2</option>
+                        <option value="low">3</option>
+                        <option value="moderate">4</option>
+                        <option value="moderate">5</option>
+                        <option value="moderate">6</option>
+                        <option value="moderate">7</option>
+                        <option value="high">8</option>
+                        <option value="high">9</option>
+                        <option value="highest">10</option>
+                    </select>
+                </div>
+                <div id="form_bottom">
+                    <textarea name="comments" rows="10" cols="50" maxlength="800" placeholder="Please write any comments/concerns with the Secure Concealed Admissions Manual here (max length of 800 characters)"
+                        required></textarea>
+                </div>
+                <div class="buttonCenter">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <div id="break"></div>
+    <footer>
+        <div id="footercontainer">
+            <div id="borderL">
+            </div>
+            <div id="borderR">
+            </div>
+            <div>
+                <img src="../Images/vtlogo.png" alt="Vault-Tec Logo">
+            </div>
+            <div id="copyright">
+                &copy; 2017 Michael Kettering
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

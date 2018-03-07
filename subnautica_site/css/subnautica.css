@@ -1,0 +1,390 @@
+/*Navigation Divs*/
+
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(4, 38, 73, .5);
+    text-align: center;
+}
+
+.nav li {
+    display: inline-block;
+    color: white;
+}
+
+.nav li a {
+    display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav li a:hover {
+    background-color: rgb(13, 35, 55);
+}
+
+.JS_spacers {
+    visibility: hidden;
+}
+
+
+/*SUMMARY DIVS*/
+
+.titlebox {
+    background-image: url("../images/Wiki-background.jpg");
+    background-position: 90% 90%;
+    margin: 0px auto;
+    padding: 50px;
+}
+
+.galleryMainContainer {
+    width: 1500px;
+    margin: 0px auto;
+}
+
+.galleryContainer {
+    background-color: rgba(4, 38, 73, 1);
+    text-align: center;
+    display: inline-block;
+}
+
+.gallery {
+    background-color: rgba(4, 38, 73, 1);
+    float: left;
+    font-size: 0;
+    /*remove HTML5 padding*/
+}
+
+.gallery video {
+    width: 750px;
+    display: inline-block;
+}
+
+.steamContainer {
+    background-color: rgba(4, 38, 73, 1);
+    padding: 0px;
+    width: 750px;
+    margin: 9% 0% 0% 0%;
+    display: inline-block;
+}
+
+.steamContainerText {
+    color: rgb(200, 200, 200);
+    font-size: 50px;
+    text-align: center;
+}
+
+.gContainerOverall {
+    background-color: rgba(4, 38, 73, 1);
+    margin: 0px auto;
+    padding: 0px;
+    width: 1500px;
+}
+
+.gContainerSidebySide {
+    display: flex;
+    /*Flex is used to auto-height columns*/
+}
+
+.gContainerLeft,
+.gContainerCenter,
+.gContainerRight {
+    /*background-color: white;*/
+    width: 500px;
+}
+
+.gContainerText {
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+    text-align: center;
+    flex: 1;
+}
+
+
+/*VIDEOS*/
+
+.gallery iframe {
+    border: 0px;
+    width: 750px;
+    height: 422px;
+    /*http://size43.com/jqueryVideoTool.html*/
+}
+
+iframe {
+    border: 0px;
+    width: 500px;
+    height: 281px;
+    /*http://size43.com/jqueryVideoTool.html*/
+}
+
+
+/*FOOTER and COPYRIGHT*/
+
+footer {
+    background-color: rgb(86, 139, 179);
+    padding: 25px;
+}
+
+.footerlogo {
+    text-align: center;
+    margin: 0px auto;
+    background-color: rgb(86, 139, 179);
+    padding: 50px;
+}
+
+.footerdivision {
+    border-top: solid 1px rgba(255, 255, 255, .1);
+}
+
+
+/*BREAK IS USED FOR SEPARATION OF DIVS*/
+
+.break {
+    padding: 25px;
+}
+
+.copyright_left {
+    float: left;
+    font-size: 10px;
+}
+
+.copyright_right {
+    float: right;
+    font-size: 10px;
+}
+
+
+/*IMAGES*/
+
+.img {
+    float: left;
+    margin: 0px 0px 0px 0px;
+    /*Flip Peeper Code*/
+    -moz-transform: scaleX(-1);
+    -o-transform: scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    filter: FlipH;
+    -ms-filter: "FlipH";
+}
+
+.sum_image {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/home.jpg");
+    background-size: 100%;
+    box-shadow: 10px 10px 5px black;
+    margin: 0px auto;
+}
+
+.uniting_image {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/uniting.jpg");
+    background-size: 100%;
+    box-shadow: 10px 10px 5px black;
+    margin: 0px auto;
+}
+
+.ea_image {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/ea.jpg");
+    background-size: 100%;
+    box-shadow: 10px 10px 5px black;
+    margin: 0px auto;
+}
+
+.gameplay_image {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/gameplay.jpg");
+    background-size: 100%;
+    box-shadow: 10px 10px 5px black;
+    margin: 0px auto;
+}
+
+.plot_image {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/plot.jpg");
+    background-size: 100%;
+    box-shadow: 10px 10px 5px black;
+    margin: 0px auto;
+}
+
+.future_image {
+    width: 1280px;
+    height: 720px;
+    background-image: url("../images/future.jpeg");
+    background-size: 105%;
+    box-shadow: 10px 10px 5px black;
+    margin: 0px auto;
+}
+
+
+/*BODY, HEADERS, PARAGRAPHS*/
+
+html,
+body {
+    background-image: url("../images/background-gradient.png");
+    background-size: cover;
+    font-family: "arial";
+    font-size: 18px;
+    font-weight: normal;
+    margin: 0px auto;
+    /*lets HTML hit top of page*/
+}
+
+hr {
+    width: 350px;
+    height: 0px;
+    color: white;
+    border-style: dotted;
+    border-width: 1px;
+}
+
+h1 {
+    text-align: center;
+    font-family: "arial";
+    font-size: 60px;
+    font-weight: normal;
+    color: white;
+}
+
+h2 {
+    text-align: center;
+    font-family: "arial";
+    font-size: 30px;
+    font-weight: bold;
+    color: white;
+}
+
+h4 {
+    text-align: center;
+    font-family: "arial";
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+}
+
+p {
+    text-indent: 0ch;
+    text-align: justify;
+    color: white;
+    padding: 0px 30% 0px 30%;
+}
+
+.p_quote {
+    font-family: "arial";
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+
+.lists {
+    width: 725px;
+    margin: 0px auto;
+    color: white;
+}
+
+.gContainerTextPseudo {
+    color: white;
+    font-size: 16px;
+    padding: 30px;
+}
+
+
+/*TABLES*/
+
+a.tableLinks {
+    text-decoration: none;
+    color: yellow;
+}
+
+table {
+    margin: 0px auto;
+    box-shadow: 10px 10px 5px black;
+    width: 80%;
+    height: 100%;
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgba(77, 77, 77, .5);
+    caption-side: top;
+}
+
+th {
+    width: 5px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+td {
+    width: 5px;
+    height: 100%;
+    border: 1px solid black;
+    padding: 5px;
+    text-align: left;
+    color: white;
+}
+
+
+/*FORMS*/
+
+form {
+    padding: 20px 20px;
+    margin: 0 auto;
+    width: 50%;
+    height: 100%;
+    box-shadow: 10px 10px 5px black;
+    text-align: justify;
+    border: 1px solid black;
+    background-color: rgba(77, 77, 77, .5);
+}
+
+input[type=text] {
+    width: 20%;
+    padding: 10px 20px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+input[type=submit],
+[type=reset] {
+    width: 49%;
+    padding: 10px 0px;
+    margin: 10px 0px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, .5);
+    color: white;
+}
+
+.buttonCenter {
+    text-align: center;
+}
+
+textarea {
+    text-align: justify;
+    resize: none;
+    width: 50%;
+    padding: 10px 10px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+select {
+    width: 16%;
+    padding: 5px 5px;
+    margin: 8px 0px;
+    border: none;
+    border-radius: 5px;
+}

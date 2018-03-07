@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="author" content="Michael Kettering" />
+    <meta name="keywords" content="HTML,CSS,Graduation,Bachelor's Degree,Goals" />
+    <meta name="description" content="This site is dedicated to detailing the career path I wish to follow after graduation." />
+    <!-- W3 recommends every web page supports device scaling!-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thinking of Applying?
+    </title>
+    <!--Linking to an external stylesheet-->
+    <link rel="stylesheet" type="text/css" href="css/KetteringMichaelFinalProject.css">
+</head>
+
+<body>
+
+    <div class="header">
+        <img class="mdhicon" src="images/mdhicon.png" alt="mdhicon.png" width="75" onmouseover="rollover(this)" onmouseout="mouseaway(this)">
+        <!--IMAGE ROLLOVER-->
+        <script type="text/javascript">
+            function rollover(logo_flat_alt) {
+                logo_flat_alt.src = 'images/mdhicon_alt.png'
+            }
+
+            function mouseaway(logo_flat) {
+                logo_flat.src = 'images/mdhicon.png'
+            }
+        </script>
+        <!--IMAGE ROLLOVER END-->
+        <h1>
+            Mobile Developers Hub
+        </h1>
+    </div>
+    <ul class="main">
+        <li class="main"><a href="KetteringMichaelFinalProject.html">Knowledge and Essentials</a></li>
+        <li class="main"><a href="home-ext.html">Education, Certification and Salary</a></li>
+        <li class="main"><a class="active" href="form.html">Thinking of Applying?</a></li>
+    </ul>
+    <div class="audioPlayer">
+        <img class="audio" src="audio/cover.jpg" alt="FTL_cover.jpg" width="300">
+        <audio controls="controls">
+        <source src="audio/DJ_Burrito_Space_Odyssey.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    </div>
+    <div class="bodyMaterial">
+        <div class="card">
+            <div class="cardSource">
+                <h2 class="main">Application</h2>
+            </div>
+            <p class="cardLayout">
+                This page is dedicated to providing our users with a way to submit a pseudo-resume to our websites owner. Once evaluated, the owner will contact the sender at an appropriate time.
+            </p>
+            <p class="cardLayout">
+                <strong><em>Note: This page doesn't actually submit/store the data given and is purely for educational/humor purposes.</em></strong>
+            </p>
+            <form method="post" action="http://ss1.ciwcertified.com/cgi-bin/process.pl">
+                <input type="text" name="username" maxlength="15" placeholder="Username"><br>
+                <input type="text" name="email" maxlength="15" placeholder="Email Address"><br><br>
+                <textarea name="resume" rows="10" cols="50" maxlength="1000" placeholder="Your resume goes here"></textarea><br> Upload any files that help persuade me into hiring you.<br> <br><input type="file" name="resume_additional_files"><br><br>What
+                is your main OS of choice?<br><br>
+                <input type="radio" name="platform" value="windows"> Windows<br>
+                <input type="radio" name="platform" value="mac"> macOS<br>
+                <input type="radio" name="platform" value="xbox"> Linux<br><br><textarea name="linux_distros" rows="10" cols="50" maxlength="1000" placeholder="If you chose Linux, type which distros you are familiar with. Else, leave this box blank."></textarea><br><br>Why
+                do you want to work for me?
+                <br><br>
+                <input type="checkbox" name="feedback_type" value="no_work"> I don't, just came here for fun.<br>
+                <input type="checkbox" name="feedback_type" value="bad_rumors"> I hear you pay well for subpar work.<br>
+                <input type="checkbox" name="feedback_type" value="perfect_workhorse_employee"> I'm bored and want some money.<br>
+                <input type="checkbox" name="feedback_type" value="oh_boy"> I don't understand the question?<br><br> Rate this site /10<br><br>
+                <select name="ratings">
+                <option value="lowest">0</option>
+                <option value="low">3</option>
+                <option value="moderate">7</option>
+                <option value="high">10</option>
+            </select>
+                <br><br>
+                <div class="buttonCenter">
+                    <input type="submit">
+                    <input type="reset">
+                </div>
+            </form>
+        </div>
+        <br>
+        <img class="main" src="images/rockets.svg" alt="rockets.svg">
+        <br>
+        <br>
+
+    </div>
+    <!--FOOTER-->
+    <footer>
+        <div class="copyright_left">
+            Hello from Fort Myers.
+        </div>
+        <div class="copyright_right">
+            &copy; 2017 Michael Kettering. All rights reserved.
+        </div>
+    </footer>
+    <!--FOOTER END-->
+</body>
+
+</html>

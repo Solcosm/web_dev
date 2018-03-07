@@ -1,0 +1,148 @@
+@font-face {
+    font-family: SouthernAire;
+    src: url('../Fonts/southernaire-webfont.woff2') format('woff2'),
+    url('../Fonts/southernaire-webfont.woff') format('woff');
+}
+@font-face {
+    font-family: Overseer;
+    src: url('../Fonts/overseer-webfont.woff2') format('woff2'),
+    url('../Fonts/overseer-webfont.woff') format('woff');
+}
+/*MOBILE STUFF*/
+#mid-mobile {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+}
+#agecheckertexttop-mobile {
+    color: white;
+    font-family: 'SouthernAire';
+    font-size: 40px;
+    text-align: center;
+    padding: 20px 0 80px 0;
+}
+button {
+    width: 250px;
+    height: 262px;
+    background: url("../Images/VaultBoy.png");
+    border: none;
+}
+#agecheckertext-mobile {
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0 0 0;
+}
+#footercontainer-mobile {
+    width: 100%;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+#borderL-mobile {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+#borderR-mobile {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 15%;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+#footer-mobile img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#copyright-mobile {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
+/*DESKTOP STUFF*/
+body {
+    background-color: #2E2525;
+}
+#mid {
+    width: 700px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    display: block;
+}
+#mid img {
+    width: 190px;
+    height: auto;
+    float: left;
+}
+#agecheckertext {
+    color: white;
+    font-family: 'SouthernAire';
+    font-size: 50px;
+    text-align: center;
+    padding: 200px 0 50px 0;
+}
+#agecheckertext2 {
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 20px;
+    text-align: center;
+    padding: 50px 0 50px 0;
+}
+#agecheckertext3 {
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 12px;
+    text-align: center;
+    margin: -50px 0 -50px 0;
+}
+#drop {
+    border: 3px dotted white;
+    border-style: dashed;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+}
+#break {
+    height: 100px;
+}
+#footercontainer {
+    width: 700px;
+    margin: 0 auto;
+    filter: invert(100%);
+}
+#borderL {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 0 0 50px;
+    float: left;
+}
+#borderR {
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px 50px 0 0;
+    float: right;
+}
+footer img {
+    width: 100px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+#copyright {
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+}
